@@ -7,7 +7,7 @@ class FlaskTestCase(unittest.TestCase):
         
     def test_index(self):
         rv = self.app.get('/')
-        assert b'hello Steven Wu' in rv.data
+        assert b'hello, Steven Wu' in rv.data
         
 if __name__ == '__main__':
     unittest.main()
